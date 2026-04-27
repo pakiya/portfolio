@@ -1,0 +1,10 @@
+.education {
+  background: var(--color-bg-secondary);
+}
+
+.list {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

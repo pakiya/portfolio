@@ -1,0 +1,80 @@
+.card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-left: 2px solid var(--color-border);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.current {
+  border-left-color: var(--color-primary);
+}
+
+.indicator {
+  position: absolute;
+  left: -7px;
+  top: 1.8rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-border);
+  border: 2px solid var(--color-bg);
+}
+
+.current .indicator {
+  background: var(--color-primary);
+}
+
+.content {
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background: var(--color-primary);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.company {
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.period {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.list {
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+
+.item {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.4rem;
+}
