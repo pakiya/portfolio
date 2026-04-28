@@ -3,9 +3,10 @@ import styles from './SkillCard.module.css';
 interface SkillCardProps {
   name: string;
   proficiency: number;
+  animate?: boolean;
 }
 
-export function SkillCard({ name, proficiency }: SkillCardProps) {
+export function SkillCard({ name, proficiency, animate = false }: SkillCardProps) {
   return (
     <div className={styles.card}>
       <div className={styles.header}>
@@ -15,7 +16,7 @@ export function SkillCard({ name, proficiency }: SkillCardProps) {
       <div className={styles.barBg}>
         <div
           className={styles.barFill}
-          style={{ width: `${proficiency}%` }}
+          style={{ width: animate ? `${proficiency}%` : '0%' }}
           role="progressbar"
           aria-valuenow={proficiency}
           aria-valuemin={0}

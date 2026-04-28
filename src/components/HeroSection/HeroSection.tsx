@@ -9,11 +9,11 @@ export function HeroSection() {
   return (
     <section id="home" className={styles.hero}>
       <div className={`container ${styles.content}`}>
-        <p className={styles.greeting}>Hi, I'm</p>
-        <h1 className={styles.name}>{personalInfo.name}</h1>
-        <h2 className={styles.title}>{personalInfo.title}</h2>
-        <p className={styles.tagline}>{personalInfo.tagline}</p>
-        <div className={styles.cta}>
+        <p className={`${styles.greeting} ${styles.fadeIn}`}>Hi, I'm</p>
+        <h1 className={`${styles.name} ${styles.fadeIn} ${styles.d1}`}>{personalInfo.name}</h1>
+        <h2 className={`${styles.title} ${styles.fadeIn} ${styles.d2}`}>{personalInfo.title}</h2>
+        <p className={`${styles.tagline} ${styles.fadeIn} ${styles.d3}`}>{personalInfo.tagline}</p>
+        <div className={`${styles.cta} ${styles.fadeIn} ${styles.d4}`}>
           <button className={styles.btnPrimary} onClick={() => scrollTo('projects')}>
             View Projects
           </button>
@@ -21,7 +21,7 @@ export function HeroSection() {
             Contact Me
           </button>
         </div>
-        <div className={styles.socials}>
+        <div className={`${styles.socials} ${styles.fadeIn} ${styles.d5}`}>
           <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             GitHub
           </a>
