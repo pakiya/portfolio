@@ -56,6 +56,16 @@ export function NavigationBar({ activeSection }: NavigationBarProps) {
             </li>
           ))}
           <li>
+            <a
+              href="https://drive.google.com/file/d/1E1O40bq_k5jB4ad8hxmFiuUG5viE-ERW/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.resumeBtn}
+            >
+              My Resume
+            </a>
+          </li>
+          <li>
             <button
               className={styles.themeBtn}
               onClick={toggleTheme}
