@@ -1,4 +1,4 @@
-const CAREER_START = new Date(2019, 1); // July 2017 (month is 0-indexed)
+const CAREER_START = new Date(2017, 6); // July 2017 (month is 0-indexed)
 
 export function getExperienceYears(): number {
   const now = new Date();
