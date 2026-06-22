@@ -2,10 +2,19 @@ import { Experience } from './types';
 
 export const experiences: Experience[] = [
   {
+    title: 'High Code Engineer',
+    company: 'Lidl & Kaufland Asia Pte. Limited',
+    period: 'Jul 2026 – Present',
+    isCurrent: true,
+    responsibilities: [
+      'Building and maintaining backend services using Node.js and NestJS for the sourcing arm of Schwarz Group, one of the largest retailers globally with 12,600+ stores across 31 countries.',
+    ],
+  },
+  {
     title: 'SDE-II',
     company: 'Finnew Solutions (Niyo)',
-    period: 'Jun 2022 – Present',
-    isCurrent: true,
+    period: 'Jun 2022 – Jul 2026',
+    isCurrent: false,
     responsibilities: [
       'Designed and scaled microservices architecture handling 200+ req/sec and serving 200K+ daily active users across multi-bank onboarding, Agent App, and TravelTech services (Visa, Lounge, eSIM).',
       'Led end-to-end development of customer onboarding platform, acquiring 3M+ users and driving measurable improvements in revenue and customer experience (NPS).',
